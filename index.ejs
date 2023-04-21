@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Insult Generator</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  
+</head>
+<style>
+ body {
+  background-image: url('https://i.imgflip.com/3x0vuk.jpg?a466992');
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  margin: auto;
+}
+ /* Button Styles */
+ #myButton {
+    background-color: #FF4136;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  #myButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  #myButton:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+</style>
+
+<body>
+  <div class = "container">
+  <form action="/submit" method="POST">
+    <button type="submit" id="myButton">Click To Make Them Insult Eachother!</button>
+  </form>
+</div>
+
+
+
+</body>
+
+</html>
